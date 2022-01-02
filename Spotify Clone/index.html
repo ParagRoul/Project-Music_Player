@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MusicPlayer</title>
+</head>
+<link rel="stylesheet" href="style.css" />
+
+<body>
+  
+  <!-- NAV BAR  -->
+  <nav>
+    <ul>
+      <li class="brand">
+        <img src="Images\logo1.jpg" alt="Sorry!Error" />MusicPlayer
+      </li>
+      <li id="info"><a href="Home.html">Home</a></li>
+      <li id="info">About Us</li>
+      <li id="info">Contact Page</li>
+    </ul>
+  </nav>
+  <!-- Container The middle One -->
+  <div class="container">
+    <div class="songlist">
+      <h1>Best Of Parag</h1>
+      <!-- Album Name -->
+      <div class="songItemContainer">
+        <div class="songItem">
+          <img src="Images\album.jpg" alt="1" />
+          <span id="0s" class="songName"><b>CheapThrills</b></span>
+          <span class="songlistplay"><span class="timestamp"><b>01:23</b></span><i id=0
+              class="fas songItemPlay fa-1x fa-play-circle"></i></span>
+        </div>
+        <div class="songItem">
+          <img src="Images\album.jpg" alt="1" />
+          <span id="1s" class="songName"><b>Christmas</b></span>
+          <span class="songlistplay"><span class="timestamp"><b>03:23</b></span><i id=1
+              class="fas songItemPlay fa-1x fa-play-circle"></i></span>
+        </div>
+        <div class="songItem">
+          <img src="Images\album.jpg" alt="1" />
+          <span id="2s" class="songName"><b>OneMoreNight</b></span>
+          <span class="songlistplay"><span class="timestamp"><b>04:43</b></span><i id=2
+              class="fas songItemPlay fa-1x fa-play-circle"></i></span>
+        </div>
+        <div class="songItem">
+          <img src="Images\album.jpg" alt="1" />
+          <span id="3s" class="songName"><b>Energetic</b></span>
+          <span class="songlistplay"><span class="timestamp"><b>01:12</b></span><i id=3
+              class="fas songItemPlay fa-1x fa-play-circle"></i></span>
+        </div>
+        <div class="songItem">
+          <img src="Images\album.jpg" alt="1" />
+          <span id="4s" class="songName"><b>Animals</b></span>
+          <span class="songlistplay"><span class="timestamp"><b>04:40</b></span><i id=4
+              class="fas songItemPlay fa-1x fa-play-circle"></i></span>
+        </div>
+        <div class="songItem">
+          <img src="Images\album.jpg" alt="1" />
+          <span id="5s" class="songName"><b>DragMeDown</b></span>
+          <span class="songlistplay"><span class="timestamp"><b>04:14</b></span><i id=5
+              class="fas songItemPlay fa-1x fa-play-circle"></i></span>
+        </div>
+        <div class="songItem">
+          <img src="Images\album.jpg" alt="1" />
+          <span id="6s" class="songName"><b>Perfect</b></span>
+          <span class="songlistplay"><span class="timestamp"><b>03:40</b></span><i id=6
+              class="fas songItemPlay fa-1x fa-play-circle"></i></span>
+        </div>
+        <div class="songItem">
+          <img src="Images\album.jpg" alt="1" />
+          <span id="7s" class="songName"><b>StoryOfMyLife</b></span>
+          <span class="songlistplay"><span class="timestamp"><b>04:58</b></span><i id=7
+              class="fas songItemPlay fa-1x fa-play-circle"></i></span>
+        </div>
+        <div class="songItem">
+          <img src="Images\album.jpg" alt="1" />
+          <span id="8s" class="songName"><b>Beautiful</b></span>
+          <span class="songlistplay"><span class="timestamp"><b>04:44</b></span><i id=8
+              class="fas songItemPlay fa-1x fa-play-circle"></i></span>
+        </div>
+      </div>
+    </div>
+   
+  </div>
+
+  <!-- The Bottom Music Bar -->
+  <div class="bottom">
+    <input type="range" name="range" id="myProgressBar" min="0" max="100" value="0" />
+    <!--For the progress Bar-->
+    <div class="icons">
+      <!-- fontawesome icons -->
+      <i class="fas songItemPlay fa-2x fa-step-backward" id="previous"></i>
+      <i class="fas songItemPlay fa-2x fa-play-circle" id="masterPlay"></i>
+      <i class="fas songItemPlay fa-2x fa-step-forward" id="next"></i>
+    </div>
+    <div class="songInfo" id="gif">
+      <img src="Images\MusicGif.gif" alt="Error"/> <span id="masterSongName">CheapThrills</span>
+    </div>
+  </div>
+ 
+  <!-- For Diff Icons->Font awesome App -->
+  <script src="https://kit.fontawesome.com/9a7f381afe.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

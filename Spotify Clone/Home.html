@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<style>
+    body {
+        background: url('Images/HomeBG.jpg');
+        background-size: 1266px 710px;
+        background-repeat: no-repeat;
+        margin: 0px;
+        padding: 0px;
+        height: 200px;
+        box-sizing: border-box;
+        font-family: 'Baloo Bhai 2', cursive;
+        font-weight: bold;
+
+    }
+
+    div {
+        margin: 2px 3px 2px 2px;
+        padding: 24px 5px 2px 2px;
+        float: left;
+        overflow: auto;
+        width: 32%;
+
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        width: 5%;
+        height: 8.5%;
+        padding-right: 11px;
+        padding-left: 6px;
+        padding-bottom: 5px;
+        padding-top: 23px;
+        position: fixed;
+        top: 2px;
+        left: 5px;
+        background-image: url("Images/Home\ icon2.png");
+        background-size: 79px;
+        background-color: black;
+
+
+    }
+
+    .right {
+       
+        width: 10%;
+      
+        margin: 1px;
+        display: inline-block;
+        position: absolute;
+        top: 4px;
+        right: 5px;
+    }
+
+    .but {
+        border: 2px solid black;
+        border-radius: 20px;
+        position: relative;
+        top: -24px;
+        /* margin: 1px; */
+        background-color: black;
+        color: white;
+        font-size: 12px;
+    }
+
+    .but:hover {
+        background-color: grey;
+    }
+
+    .but:active {
+        background-color: lightgreen;
+    }
+
+    .center {
+        /* border: 2px solid blue; */
+        margin: auto;
+        width: 45%;
+        position: absolute;
+        top: 5px;
+        left: 1px;
+        right: 57px;
+
+    }
+
+    li {
+        /* display:inline block;
+        list-style: none; */
+        color: white;
+        position: relative;
+        bottom: 42px;
+        left: auto;
+        right: auto;
+        float: left;
+        overflow: auto;
+        margin: 1px 61px 4px 4px;
+        padding: 5px 4px 4px 4px;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        background-color: grey;
+    }
+
+    a:active {
+        background-color: lightgreen;
+    }
+
+    /* CONTAINER STARTS HERE */
+    .container {
+      
+        position: sticky;
+        top: 10px;
+        border-radius: 12px;
+        padding: 18px 49px;
+        margin: 210px 29px;
+        width: 371px;
+        font-size: 23px;
+        text-align: center;
+
+    }
+
+    .form-group {
+        text-align: center;
+        display: block;
+        border: 2px solid black;
+        width: 377px;
+        padding: 2px;
+        margin: 2px;
+        font-size: 19px;
+        font-family: 'Baloo Bhai 2', cursive;
+        font-weight: bold;
+    }
+
+    .start {
+        background-color: #1287e4;
+        color: #ffeb3b;
+        width: 150px;
+        padding: 0px 20px;
+        margin: 0px 100px;
+        font: bold;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        border-radius: 21px;
+    }
+    .start:hover{
+        background-color: rgb(204, 0, 255);
+        cursor: pointer;
+    }
+
+    .btn {
+        background-color: black;
+        color: white;
+        
+    }
+
+    .btn:hover {
+        background-color: grey;
+        text-decoration: underline;
+    }
+
+    .btn:active {
+        background-color: lightgreen;
+    }
+
+    .bottom {
+        bottom: -92px;
+        width: -webkit-fill-available;
+        height: 47px;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+
+    }
+</style>
+
+<body>
+
+    <header>
+        <div class="left">
+            <!-- for the logo -->
+
+        </div>
+        <div class="center">
+            <!-- for the navigation bar -->
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="right">
+            <!-- extra info -->
+            <button class="but">Call Us</button>
+            <button class="but">Email</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>
+            <marquee width=50% height=40% direction="right" scrollamount="17">MusicPlayer </marquee>
+        </h1>
+        <a href="index.html"><h4 class="start">PLAYLIST</h4></a>
+    </div>
+    <div class="bottom">
+        copyrights @www.MusicPlayer.com.All rights reserved
+    </div>
+    <script src="script.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Varela+Round&display=swap");
+
+body {
+  background-color:rgb(241 12 101);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* For NAV bar */
+nav {
+  font-family: "Baloo";
+}
+/* for the contents in the NAV BAR */
+nav ul {
+  
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background-color: #131313;
+  color: #ebcf06;
+  font-size: larger;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* for logo In NAV BAR */
+.brand img {
+  width: 53px;
+  padding: 0px 8px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+
+#info{
+  padding-left: 81px;
+}
+#info:hover{
+  /* background-color: rgb(255 0 146); */
+  border-radius: 20px;
+  color: rgb(255 0 146);
+    text-decoration: underline;
+    text-decoration-color: #00ffa7;
+}
+
+
+/* Container */
+.container {
+  min-height: 58.2vh; /*75% of height*/
+  background-color: black;
+  color: white;
+  display: flex;
+  font-family: "Varela Round", sans-serif;
+  
+  margin: 20px auto;
+  width: 70%;
+  border-radius: 114px;
+  padding: 34px;
+  background-image: url(Images/cover.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size:559px ;
+}
+.songBanner {
+  display: flex;
+  height: 530px;
+  width: 10px;
+  padding: 45px 0px 1px 108px;
+ 
+}
+.songlist{
+    width: 356px;
+}
+
+.songItemContainer{
+    margin: -8x;
+}
+
+/* For the ablbum Cover  */
+.songItem{
+    border-radius: 20px;
+    height: 46px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 14px 1px;
+    /* justify-content: space-around; */ 
+    align-items: center;
+    border: 2px solid black;
+    
+}
+/* Setting up position inside the Song item container */
+
+.songItem img {
+    width: 52px;
+    height: 36px;
+    border: 2px solid black;
+    border-radius: 24px;
+
+    /* border: 2px solid red; */
+    margin:0px 13px;
+    
+}
+.songItemPlay{
+  cursor: pointer;
+}
+.songName{
+  /* border: 2px solid red; */
+  padding: 0px 4px;
+    margin: 0px 6px;
+    width: 169px;
+    display: flex;
+    justify-content: center;
+}
+.song{
+    position: absolute;
+    left: 343px;
+}
+.timestamp{
+    margin:0px 26px ;
+    position: absolute;
+    left: 471px;
+    
+}
+
+
+/* Bottom Progress Bar */
+.bottom {
+  position: sticky;
+  bottom: 0; /*To make the bar stick to bottom */
+  height: 80px; /* For the Music bar */
+  background-color: black;
+  color: white;
+  /* To make the progress bar to the center as directly we cant make the bar cneter */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* To bring icons at bottom */
+}
+
+.icons {
+  margin-top: 2px;
+  margin-bottom: 1px;
+  cursor: pointer;
+}
+#myProgressBar {
+  width: 650px;
+  cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left:0px;
+  
+    margin: 0px 232px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in; /*To maintain the speed of transition */
+}
+.songInfo img{
+    width: 46px;
+    height: 46px;
+    padding: 0px 20px;
+  
+}
+
